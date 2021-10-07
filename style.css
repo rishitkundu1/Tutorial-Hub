@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+      overflow: hidden;
+      background-color: black;
+}
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      list-style: none;
+      text-decoration: none;
+}
+.nav-bar{
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      background-color: black;
+      border-bottom: 3px solid white;
+}
+.nav-bar h2{
+      color: white;
+      float: left;
+      margin: 3px 0 0 30px;
+}
+.bars{
+      color: white;
+      font-size: 30px;
+      float: left;
+      margin: 2px 0 0 20px;
+      display: none;
+      cursor: pointer;
+}
+.nav-bar ul li.hidden-menu{
+      display: none;
+}
+.nav-bar ul{
+      display: flex;
+      float: right;
+      margin: 0 30px 0 0;
+      transition: 1s ease-in-out;
+}
+.nav-bar ul li{
+      color: white;
+      font-size: 20px;
+      margin: 5px 10px;
+      border-right: 1px solid white;
+      padding: 3px 10px;
+      width: 100px;
+      cursor: pointer;
+}
+.nav-bar ul li:hover{
+      font-weight: 600;
+}
+li.active{
+      font-weight: 600;
+}
+.nav-bar ul li a{
+      color: white;
+}
+.nav-bar ul li:nth-child(3){
+      border: none;
+}
+
+@media only screen and (max-width: 630px){
+      .nav-bar{
+            margin-top: -10px;
+      }
+      .nav-bar h2{
+            font-size: 25px;
+            float: none;
+      }
+      .bars{
+            display: inline;
+      }
+      .nav-bar ul{
+            position: absolute;
+            width: 100%;
+            background-color: black;
+            height: 100%;
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+            left: -100%;
+      }
+      .nav-bar ul li.hidden-menu{
+            display: block;
+      } 
+      .nav-bar ul li{
+            width: 100%;
+            font-size: 20px;
+            margin: 25px 0;
+            border: none;
+      }
+}
+.content{
+      width: 100%;
+      height: 600px;
+      overflow-y: auto;
+      background-color: white;
+}
+.section-1{
+      display: flex;
+      background-color: black;
+      height: 500px;
+}
+.section-1 .left{
+      width: 60%;
+      height: 100%;
+      padding: 30px;
+}
+.section-1 .left h2{
+      color: white;
+      font-size: 40px;
+}
+.section-1 .left h3{
+      color: white;
+      font-size: 20px;
+}
+.section-1 .left p{
+      color: white;
+      font-size: 17px;
+      margin: 10px 0 0 0;
+}
+.section-1 .right img{
+      width: 300px;
+      height: auto;
+      margin: 30px 0 0 0;
+}
+.section-1 .right{
+      text-align: center;
+      width: fit-content;
+}
+::-webkit-scrollbar-track{
+      background: none;
+}
+::-webkit-scrollbar{
+      background: black;
+      width: 1px;
+}
+.bg-1{
+      background-image: url("https://ak.picdn.net/shutterstock/videos/1033204736/thumb/1.jpg");
+      min-height: 100%;
+      /* position: relative; */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.tutorial-section{
+      width: 100%;
+      height: 100%;
+      background-color: black;
+}
+@media only screen and (max-width: 700px){
+      .nav-bar h2{
+            font-size: 23px;
+            margin-top: 5px;
+      }
+      .nav-bar ul li{
+            font-size: 17px;
+      }
+      .nav-bar ul:nth-child(3){
+            border: none;
+      }
+      .section-1{
+            display: block;
+            background-color: black;
+            height: fit-content;
+      }
+      .section-1 .left{
+            width: 100%;
+            height: 60%;
+            text-align: center;
+      }
+      .section-1 .right{
+            width: 100%;
+            height: 60%;
+            /* padding: 30px; */
+      }
+}

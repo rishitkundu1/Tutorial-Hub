@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tutorial's Hub</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+<body>
+      <div class="nav-bar">
+            <div class="bars" id="bars" onclick="menuOpen();">
+                  <i class="far fa-bars"></i>
+            </div>
+            <h2>Tutorials Hub</h2>
+            <ul id="menu">
+                  <li class="active"><a href="#">About</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li class="hidden-menu"><a href="#">Courses</a></li>
+                  <li class="hidden-menu"><a href="#">Trainers</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+      </div>
+      <div class="content">
+            <div class="section-1">
+                  <div class="left">
+                        <h2>Tutorials Hub</h2>
+                        <h3>Coding Tutorials</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea libero mollitia consectetur ipsum, quo, vero iusto alias ullam quos nemo dolores. Atque fugiat beatae, consectetur laborum ut similique molestias.
+                        Quo, aspernatur. Assumenda velit facere voluptas recusandae officiis accusantium doloremque repudiandae. Beatae perspiciatis ut recusandae, deleniti perferendis</p>
+                  </div>
+                  <div class="right">
+                        <img src="image-removebg-preview.png" alt="Tutorials Hub">
+                  </div>
+            </div>
+            <div class="bg-1"></div>
+            <div class="tutorial-section">
+                  <div class="row">
+                        <div class="inner-row"></div>
+                        <div class="inner-row"></div>
+                  </div>
+                  <div class="row">
+                        <div class="inner-row"></div>
+                        <div class="inner-row"></div>
+                  </div>
+            </div>
+      </div>
+
+
+
+      <script>
+            function menuOpen(){
+                  var bars = document.querySelector("#bars");
+                  var ul = document.querySelector("#menu"); 
+
+                  if(ul.style.left == "0%"){
+                        ul.style.left = "-100%";
+                  }else{
+                        ul.style.left = "0%"
+                  }
+            }
+      </script>
+</body>
+</html>
